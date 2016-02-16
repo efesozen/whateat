@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="16">
     <extensionMap>
       <mapping pattern="tesy" type="PLAIN_TEXT" />
+      <mapping pattern="index" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
