@@ -1,6 +1,9 @@
-<ion-view view-title="Chats">
+<ion-view view-title="Restoranlar">
   <ion-content>
     <ion-list>
+      <ion-toggle  ng-model="settings.enableFriends">
+        Yakınımdaki Restoranlar
+      </ion-toggle>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
         <img ng-src="{{chat.face}}">
         <h2>{{chat.name}}</h2>
