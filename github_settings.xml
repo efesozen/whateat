@@ -1,6 +1,7 @@
 <application>
   <component name="GithubSettings">
-    <option name="LOGIN" value="efesozen" />
+    <option name="LOGIN" value="serdarakpinar@gmail.com" />
+    <option name="HOST" value="https://github.com/efesozen/whateat.git" />
     <option name="AUTH_TYPE" value="BASIC" />
   </component>
 </application>
