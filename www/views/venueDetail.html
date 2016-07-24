@@ -1,0 +1,45 @@
+<ion-view title="">
+  <ion-nav-bar class="bar-orange" align-title="center" >
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <ion-nav-title>
+      <img src="img/tepe_logo.png" class="main-logo">
+    </ion-nav-title>
+  </ion-nav-bar>
+
+
+  <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+    <img ng-src="{{vm.venue.photo}}" class="venueImg">
+    <span class="rating" ng-style="{'background-color':'#'+vm.venue.ratingColor}">{{vm.venue.rating}}</span>
+    <ul class="list">
+      <li class="item">
+        <h2 class="venue-name">{{vm.venue.name}}</h2>
+        <h4 class="venue-category" ng-repeat="category in vm.venue.categories">
+          {{category.name}}
+        </h4>
+        <div class="clearfix"></div>
+        <p>
+          {{vm.venue.location.address}}
+          <br>
+          {{vm.showState}}
+        </p>
+      </li>
+      <a class="item"
+         href="tel:{{vm.venue.contact.phone}}"
+         ng-if="vm.venue.contact.phone">
+        {{vm.showPhone}}
+      </a>
+      <a class="item"
+        ng-href="geo:{{::vm.venue.location.lat}},{{::vm.venue.location.lng}}?q={{::vm.venue.location.lat}},{{::vm.venue.location.lng}}({{::vm.venue.location.name}})"
+        ng-if="vm.venue.location.lat">
+        Haritada Göster
+        </a>
+
+      <a class="item" href="#"
+         ng-click="vm.openLink(vm.venue.url);"
+         ng-if="vm.venue.url">
+      {{vm.venue.url.replace('http://','')}}
+    </a>
+    </ul>
+  </ion-content>
+</ion-view>

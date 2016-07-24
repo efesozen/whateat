@@ -1,0 +1,27 @@
+<ion-view title="">
+  <ion-nav-bar class="bar-orange" align-title="center" >
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+    <ion-nav-title style="color: #ffffff;">
+      {{vm.title}}
+    </ion-nav-title>
+  </ion-nav-bar>
+  <ion-content padding="false" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+    <ul class="list">
+      <li class="item"
+          ng-repeat="venue in vm.venues"
+          ng-click="vm.getVenue(venue.venue.id)"
+          ng-if="venue.venue.ratingColor">
+
+        <h2>{{venue.venue.name}}</h2>
+        <p>{{venue.venue.hours.status}}</p>
+        <p>
+          {{(venue.venue.location.distance / 1000).toFixed(1)}} km uzaklıkta
+        </p>
+        <span class="badge badge-assertive"
+              ng-style="{'background-color':'#'+venue.venue.ratingColor}"> {{venue.venue.rating}}</span>
+      </li>
+    </ul>
+
+  </ion-content>
+</ion-view>
