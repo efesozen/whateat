@@ -7,11 +7,19 @@ var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sh = require('shelljs');
 
+var path = require('path');
+var projectError = require('gulp-util');
+var clean = require('gulp-clean');
+var uglify = require('gulp-uglify');
+var filesize = require('gulp-filesize');
+
+
+
 var paths = {
   sass: ['./scss/**/*.scss']
 };
 
-gulp.task('default', ['sass']);
+gulp.task('default', ['sass','manage']);
 
 gulp.task('sass', function(done) {
   gulp.src('./scss/app.scss')
@@ -48,4 +56,16 @@ gulp.task('git-check', function(done) {
     process.exit(1);
   }
   done();
+});
+
+gulp.task('manage', function() {
+  return gulp.src('./www/js/*.js')
+      .pipe(concat('project.js'))
+      .pipe(gulp.dest('./www/js/'))
+      .pipe(filesize())
+      .pipe(uglify())
+      .pipe(rename('project.min.js')
+          .pipe(gulp.dest('./www/js/'))
+          .pipe(filesize())
+          .on('error', projectError.log))
 });
