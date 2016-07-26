@@ -3,15 +3,18 @@
   font-family: Gotham;
   background: url(../img/bg.png);
   left: -3px;
+
 }
 .food-img{
   width: 100%;
   height: auto;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
 }
 
 .food-name{
   font-size: 30px;
-  color: white;
+  color: #fff;
   text-shadow: 2px 2px rgba(0,0,0,0.5);
   position: absolute;
   bottom: 25px;
@@ -22,7 +25,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 220px !important;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .food-button{
@@ -33,7 +36,7 @@
   color:white !important;
   font-weight: bold;
   font-size:20px !important;
-  margin-top:10px;
+  margin-bottom:10px;
 }
 
 .button-orange{
@@ -46,8 +49,11 @@
 }
 
 .frame {
-
   position: relative;
+}
+
+.shadow{
+  background-color: black;
 }
 
 .fade {

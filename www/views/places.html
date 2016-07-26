@@ -6,13 +6,12 @@
       {{vm.title}}
     </ion-nav-title>
   </ion-nav-bar>
-  <ion-content padding="false" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+  <ion-content on-swipe-right="$ionicGoBack()">
     <ul class="list">
       <li class="item"
           ng-repeat="venue in vm.venues"
           ng-click="vm.getVenue(venue.venue.id)"
           ng-if="venue.venue.ratingColor">
-
         <h2>{{venue.venue.name}}</h2>
         <p>{{venue.venue.hours.status}}</p>
         <p>
@@ -22,6 +21,5 @@
               ng-style="{'background-color':'#'+venue.venue.ratingColor}"> {{venue.venue.rating}}</span>
       </li>
     </ul>
-
   </ion-content>
 </ion-view>

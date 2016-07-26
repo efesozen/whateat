@@ -31,9 +31,9 @@ angular.module('whatEatApp',
 })
 
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
   $urlRouterProvider.otherwise('/')
-
+  $ionicConfigProvider.backButton.previousTitleText(false).text('');
   $stateProvider
     .state('home', {
       url: '/',

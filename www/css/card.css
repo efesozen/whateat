@@ -46,8 +46,9 @@
 }
 
 .frame {
-
   position: relative;
+  z-index: 999;
+  background-color: black;
 }
 
 .fade {

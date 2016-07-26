@@ -24,22 +24,23 @@
           {{vm.showState}}
         </p>
       </li>
-      <a class="item"
+      <a class="item icon-left ion-ios-telephone"
          href="tel:{{vm.venue.contact.phone}}"
-         ng-if="vm.venue.contact.phone">
+         ng-if="vm.venue.contact.phone"> 0
         {{vm.showPhone}}
       </a>
-      <a class="item"
+      <a class="item icon-left ion-android-pin"
         ng-href="geo:{{::vm.venue.location.lat}},{{::vm.venue.location.lng}}?q={{::vm.venue.location.lat}},{{::vm.venue.location.lng}}({{::vm.venue.location.name}})"
         ng-if="vm.venue.location.lat">
         Haritada Göster
         </a>
 
-      <a class="item" href="#"
+      <a class="item icon-left ion-ios-world" href="#"
          ng-click="vm.openLink(vm.venue.url);"
          ng-if="vm.venue.url">
       {{vm.venue.url.replace('http://','')}}
     </a>
     </ul>
+
   </ion-content>
 </ion-view>

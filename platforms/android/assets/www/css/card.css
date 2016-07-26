@@ -6,6 +6,7 @@
 }
 .food-img{
   width: 100%;
+  height: auto;
 }
 
 .food-name{
@@ -45,8 +46,9 @@
 }
 
 .frame {
-
   position: relative;
+  z-index: 999;
+  background-color: black;
 }
 
 .fade {

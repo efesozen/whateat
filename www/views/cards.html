@@ -7,24 +7,20 @@
   </ion-nav-bar>
 
 
-  <ion-content padding="false" class="food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+  <ion-content  class="food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
     <div class="frame">
       <img src="img/foto.png" class="food-img">
       <span class="food-name">{{vm.food.name}}</span>
     </div>
-
-
     <div class="food-button-group">
-      <button class="button button-orange food-button" ng-click="vm.selectFood(vm.food.name)">
+      <button class="button button-full button-orange food-button" ng-click="vm.selectFood(vm.food.name)">
         SENİ SEÇTİM
       </button>
-      <button class="button button-green food-button" ng-click="vm.change()">
+      <button class="button button-full button-green food-button" ng-click="vm.change()">
         BAŞKA NE VAR?
       </button>
     </div>
-
   </ion-content>
-
 </ion-view>
 
 
