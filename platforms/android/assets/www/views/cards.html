@@ -9,14 +9,15 @@
 
   <ion-content  class="food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
     <div class="frame">
-      <img src="img/foto.png" class="food-img">
-      <span class="food-name">{{vm.food.name}}</span>
+      <!-- <img src="img/foto.png" class="food-img">-->
+      <img ng-src="{{vm.card.image.base64}}" class="food-img">
+      <span class="food-name">{{vm.card.name}}</span>
     </div>
     <div class="food-button-group">
-      <button class="button button-full button-orange food-button" ng-click="vm.selectFood(vm.food.name)">
+      <button class="button button-full button-orange food-button" ng-click="vm.selectCard(vm.card.name)">
         SENİ SEÇTİM
       </button>
-      <button class="button button-full button-green food-button" ng-click="vm.change()">
+      <button class="button button-full button-green food-button" ng-click="vm.changeCards()">
         BAŞKA NE VAR?
       </button>
     </div>

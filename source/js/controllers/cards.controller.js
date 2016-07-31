@@ -11,14 +11,14 @@
 
   CardsCtrl.$inject = ['$state','CardsService','$ionicLoading'];
 
-
+//TODO: fonksiyonlar düzenlenecek
   function CardsCtrl($state,CardsService,$ionicLoading){
     var vm = this;
     var cards = [];
     var shownCards = [];
 
     vm.card = {};
-    vm.changeCards = changeCards;
+    vm.changeCards = changeCard;
     vm.selectCard = selectCard;
 
     init();
@@ -26,11 +26,16 @@
     /******* functions *********/
 
     function init(){
-      getCards();
+      getCard();
     }
 
     function selectCard(card){
-      $state.go('places',{ searchText:card})
+      $state.go('places',{ searchText:card});
+     
+    }
+    
+    function changeCard() {
+      getCard();
     }
 
     function changeCards() {
@@ -53,14 +58,30 @@
       shownCards = [];
       changeCards();
     }
-
-
-    function getCards() {$ionicLoading.show({
+    
+    function getCard() {
+      vm.card = {};
+      $ionicLoading.show({
         template: 'Loading...'
       }).then(function(){
         console.log("The loading indicator is now displayed");
       });
-      CardsService.getCards(function (d) {
+      CardsService.getCards(0,function (d) {
+        vm.card = d;
+        $ionicLoading.hide().then(function(){
+          console.log("The loading indicator is now hidden");
+        });
+      });
+    }
+
+
+    function getCards() {
+      $ionicLoading.show({
+        template: 'Loading...'
+      }).then(function(){
+        console.log("The loading indicator is now displayed");
+      });
+      CardsService.getCards(1,function (d) {
        cards = d;
        changeCards();
         $ionicLoading.hide().then(function(){
@@ -68,24 +89,5 @@
         });
       });
     }
-
-    /*** test oparation *****/
-    //vm.items = [];
-    //vm.item = {};
-    //$ionicLoading.show({
-    //  template: 'Loading...'
-    //}).then(function(){
-    //  console.log("The loading indicator is now displayed");
-    //});
-    //CardsService.getCards(function (d) {
-    //  vm.items = d;
-    //  $ionicLoading.hide().then(function(){
-    //    console.log("The loading indicator is now hidden");
-    //  });
-    //});
-    //
-    //vm.addItem = function (){
-    //  CardsService.addCard();
-    //}
   }
 })();

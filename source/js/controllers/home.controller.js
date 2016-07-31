@@ -8,9 +8,9 @@
     .module('app.controllers')
     .controller('HomeCtrl',HomeCtrl);
 
-  HomeCtrl.$inject = ['$state'];
+  HomeCtrl.$inject = ['$state','$ionicPopup'];
 
-  function HomeCtrl($state) {
+  function HomeCtrl($state,$ionicPopup) {
     var vm = this;
 
     vm.title = 'Hello World';
@@ -28,6 +28,7 @@
     function whatCook () {
       $state.go('foods')
     }
+
   }
 
 })();

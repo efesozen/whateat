@@ -82,7 +82,7 @@ gulp.task('scripts', ['clean'], function() {
         add: true,
         single_quotes: true
       }))
-      .pipe(uglify())
+      //.pipe(uglify())
       .pipe(concat(files.jsbundle))
       .pipe(gulp.dest('./www/js'));
 })
