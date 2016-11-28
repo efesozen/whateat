@@ -1,0 +1,83 @@
+
+.food-card{
+  font-family: Gotham;
+  background: url(../img/bg.png);
+  left: -3px;
+
+}
+.food-img{
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+.food-name{
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+
+.food-button-group{
+  margin-left: auto;
+  margin-right: auto;
+  width: 220px !important;
+  margin-top: 10px;
+}
+
+.food-button{
+  font-family: Gotham;
+  width: 220px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  color:white !important;
+  font-weight: bold;
+  font-size:20px !important;
+  margin-bottom:10px;
+}
+
+.button-orange{
+  background:#ff7e00 !important;
+}
+
+
+.button-green{
+  background:#00897B !important;
+}
+
+.frame {
+  position: relative;
+}
+
+.shadow{
+  background-color: black;
+}
+
+.fade {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+
+  background:
+          -webkit-linear-gradient(top,
+                  rgba(0,0,0,0.65) 0%,
+                  rgba(0,0,0,0) 0%,
+                  rgba(0,0,0,0.5) 99%,
+                  rgba(0,0,0,0) 0%
+          );
+}
+
+
+
+.badge{
+  padding-top:9px;
+  min-width: 35px;
+  .item &{
+    height: 34px;
+    border-radius: 90px;
+    text-align: center;
+  }
+}
