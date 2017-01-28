@@ -26,7 +26,7 @@
     /******* functions *********/
 
     function init(){
-      getCard();
+      getCards();
     }
 
     function selectCard(card){
@@ -35,7 +35,7 @@
     }
     
     function changeCard() {
-      getCard();
+      getCards();
     }
 
     function changeCards() {
