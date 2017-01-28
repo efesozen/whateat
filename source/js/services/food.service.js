@@ -11,11 +11,9 @@
   function FoodService() {
     return {
       foods: [{
-        "name" : "Biber Dolması"
-      },
-        {
-          "name" : "Ispanak"
-        }
+        "name" : "Biber Dolması",
+        "path" : ""
+      }
       ]
     }
 

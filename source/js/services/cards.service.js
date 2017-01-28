@@ -10,6 +10,48 @@
 
   CardsService.$inject = ['$firebaseArray','$firebaseObject'];
 
+  var cards = [{
+    name : 'Lahmacun',
+    path : '../img/foods/lahmacun.jpg'
+  },
+    {
+      name : 'Köfte',
+      path : '../img/foods/kofte.jpg'
+    },
+    {
+      name : 'Hamburger',
+      path : '../img/foods/hamburger.jpg'
+    },
+    {
+      name : 'Pizza',
+      path : '../img/foods/pizza.jpg'
+    },
+    {
+      name : 'Çiğ Köfte',
+      path : '../img/foods/cigkofte.jpg'
+    },
+    {
+      name : 'Tantuni',
+      path : '../img/foods/tantuni.jpg'
+    },
+    {
+      name : 'Kokoreç',
+      path : '../img/foods/kokorec.jpg'
+    },
+    {
+      name : 'İskender',
+      path : '../img/foods/iskender.jpg'
+    },
+    {
+      name : 'Sandviç',
+      path : '../img/foods/sandvic.jpg'
+    },
+    {
+      name : 'Döner',
+      path : '../img/foods/doner.jpg'
+    }
+  ]; 
+
   function CardsService($firebaseArray,$firebaseObject) {
 
     var db = "https://whateatapp.firebaseio.com/cards";
@@ -17,7 +59,7 @@
     var shownCards = [];
     
     var getCards = function(index,successCallBack){
-      var a = true;
+    /*  var a = true;
       var lastKnownKey = null;
       var firstQuery = ref.orderByKey().limitToFirst(100);
       firstQuery.once('value', function(snapshot) {
@@ -35,7 +77,7 @@
             }
           }
         });
-      });
+      });*/
 
       
      // ref.on("value", function(snapshot) {
@@ -44,6 +86,8 @@
      // }, function (errorObject) {
      //   console.log("The read failed: " + errorObject.code);
      // });
+
+      successCallBack(cards);
     };
 
     return {
