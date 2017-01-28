@@ -58,11 +58,39 @@
 
 /*-----------------------------------------------------*/
 
-body{
-  background-color: black;
-  padding: 0;
-  margin: 0;
+html, body {
+  height:100% !important;
+  margin: -1px !important;;
+  padding: -1px !important;
 }
+.kutu { height:50%; }
+.neyesem { background:#000 }
+.nepisirsem {  background:#000; }
+
+.neyesem img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+}
+.nepisirsem img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  filter: alpha(opacity=50);
+}
+
+.logo1 *{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+
 
 .center_logo img{
   width: 40%;
@@ -128,18 +156,20 @@ and (orientation: portrait) {
   .whatcook img {
     content:url(../img/whatcook_back_iphone4.png) !important;
   }
-  .center_logo img{
-    width: 35% !important;
-    left: 34% !important;
+  .logo1 *{
+    margin-top: -75px;
+    margin-left: -75px;
+    width: 150px;
+    height: 150px;
   }
   h1{
     font-size: 45px !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:20%;
     left:22%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:70%;
     left:17%;
   }
@@ -157,15 +187,22 @@ and (orientation: portrait) {
     max-width: 320px;
   }
   h1{
-    font-size: 35px !important;
+    font-size: 30px !important;
   }
-  .whateat h1{
-    top:20%;
-    left:20%;
+
+  .logo1 *{
+    margin-top: -60px;
+    margin-left: -60px;
+    width: 120px;
+    height: 120px;
   }
-  .whatcook h1{
+  .neyesem h1{
+    top:18%;
+    left:24%;
+  }
+  .nepisirsem h1{
     top:70%;
-    left:15%;
+    left:16%;
   }
 }
 
@@ -183,11 +220,11 @@ and (orientation: portrait) {
   h1{
     font-size: 40px !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:20%;
     left:22%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:70%;
     left:17%;
   }
@@ -207,11 +244,11 @@ and (orientation: portrait) {
   h1{
     font-size: 40px !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:20%;
     left:25%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:70%;
     left:20%;
   }
@@ -231,11 +268,11 @@ and (orientation: portrait) {
   h1{
     font-size: 35px !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:20%;
     left:25%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:70%;
     left:20%;
   }
@@ -252,17 +289,20 @@ and (orientation: portrait) {
     max-height: 800px;
     max-width: 480px;
   }
-  .center_logo img{
-    top: 42% !important;
+  .logo1 *{
+    margin-top: -75px;
+    margin-left: -75px;
+    width: 150px;
+    height: 150px;
   }
   h1{
     font-size: 40px !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:24%;
     left:31%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:75%;
     left:25%;
   }
@@ -279,18 +319,52 @@ and (orientation: portrait) {
     max-height: 960px;
     max-width: 540px;
   }
-  .center_logo img{
-    top: 42% !important;
+  .logo1 *{
+    margin-top: -75px;
+    margin-left: -75px;
+    width: 150px;
+    height: 150px;
   }
   h1{
     font-size: 35pt !important;
   }
-  .whateat h1{
+  .neyesem h1{
     top:20%;
     left:20%;
   }
-  .whatcook h1{
+  .nepisirsem h1{
     top:70%;
     left:15%;
+  }
+}
+
+
+/* ----------- Nexus 7 ----------- */
+/* Portrait */
+@media only screen
+and (min-device-width: 600px)
+and (max-device-width: 900px)
+and (-webkit-min-device-pixel-ratio: 1)
+and (orientation: portrait) {
+  .container {
+    max-height: 900px;
+    max-width: 600px;
+  }
+  .logo1 *{
+    margin-top: -75px;
+    margin-left: -75px;
+    width: 150px;
+    height: 150px;
+  }
+  h1{
+    font-size: 35pt !important;
+  }
+  .neyesem h1{
+    top:20%;
+    left:28%;
+  }
+  .nepisirsem h1{
+    top:70%;
+    left:22%;
   }
 }
