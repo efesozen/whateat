@@ -12,31 +12,31 @@
 
   var cards = [{
     name : 'Lahmacun',
-    path : '../img/foods/lahmacun.jpg'
+    path : 'source/img/foods/lahmacun.jpg'
   },
     {
       name : 'Köfte',
-      path : '../img/foods/kofte.jpg'
+      path : 'source/img/foods/kofte.jpg'
     },
     {
       name : 'Hamburger',
-      path : '../img/foods/hamburger.jpg'
+      path : 'source/img/foods/hamburger.jpg'
     },
     {
       name : 'Pizza',
-      path : '../img/foods/pizza.jpg'
+      path : 'source/img/foods/pizza.jpg'
     },
     {
       name : 'Çiğ Köfte',
-      path : '../img/foods/cigkofte.jpg'
+      path : 'source/img/foods/cigkofte.jpg'
     },
     {
       name : 'Tantuni',
-      path : '../img/foods/tantuni.jpg'
+      path : 'source/img/foods/tantuni.jpg'
     },
     {
       name : 'Kokoreç',
-      path : '../img/foods/kokorec.jpg'
+      path : 'source/img/foods/kokorec.jpg'
     },
     {
       name : 'İskender',

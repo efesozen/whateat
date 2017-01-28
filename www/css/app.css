@@ -9847,9 +9847,7 @@ a.button {
 /*}*/
 /*-----------------------------------------------------*/
 html, body {
-  height: 100% !important;
-  margin: -1px !important;
-  padding: -1px !important; }
+  height: 100% !important; }
 
 .kutu {
   height: 50%; }
