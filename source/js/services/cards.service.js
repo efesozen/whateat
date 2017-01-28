@@ -12,43 +12,43 @@
 
   var cards = [{
     name : 'Lahmacun',
-    path : 'source/img/foods/lahmacun.jpg'
+    path : 'img/foods/lahmacun.jpg'
   },
     {
       name : 'Köfte',
-      path : 'source/img/foods/kofte.jpg'
+      path : 'img/foods/kofte.jpg'
     },
     {
       name : 'Hamburger',
-      path : 'source/img/foods/hamburger.jpg'
+      path : 'img/foods/hamburger.jpg'
     },
     {
       name : 'Pizza',
-      path : 'source/img/foods/pizza.jpg'
+      path : 'img/foods/pizza.jpg'
     },
     {
       name : 'Çiğ Köfte',
-      path : 'source/img/foods/cigkofte.jpg'
+      path : 'img/foods/cigkofte.jpg'
     },
     {
       name : 'Tantuni',
-      path : 'source/img/foods/tantuni.jpg'
+      path : 'img/foods/tantuni.jpg'
     },
     {
       name : 'Kokoreç',
-      path : 'source/img/foods/kokorec.jpg'
+      path : 'img/foods/kokorec.jpg'
     },
     {
       name : 'İskender',
-      path : '../img/foods/iskender.jpg'
+      path : 'img/foods/iskender.jpg'
     },
     {
       name : 'Sandviç',
-      path : '../img/foods/sandvic.jpg'
+      path : 'img/foods/sandvic.jpg'
     },
     {
       name : 'Döner',
-      path : '../img/foods/doner.jpg'
+      path : 'img/foods/doner.jpg'
     }
   ]; 
 
