@@ -9803,49 +9803,9 @@ a.button {
 .bar-orange {
   background: #ff7e00; }
 
-/*.bar-title{*/
-/*text-align: center;*/
-/*}*/
 .main-logo {
   width: 135px; }
 
-/*.home-screen img{*/
-/*width: 100%;*/
-/*display: block;*/
-/*}*/
-/*.home-screen img:nth-child(2){*/
-/*top:50%;*/
-/*}*/
-/*.center-logo{*/
-/*position: absolute;*/
-/*width: 125px!important;*/
-/*height: 150px!important;*/
-/*top: 40%;*/
-/*left: 33%!important;*/
-/*z-index: 2*/
-/*}*/
-/*div.home-desc{*/
-/*position: absolute;*/
-/*z-index: 1;*/
-/*background-color: rgba(0,0,0,0.3);*/
-/*height: 50%;*/
-/*width: 100%;*/
-/*padding-left: 27%;*/
-/*padding-top: 35%;*/
-/*letter-spacing: 2px;*/
-/*}*/
-/*div.home-desc h3{*/
-/*color:white;*/
-/*font-size:35px;*/
-/*font-family: 'whatEat' !important;*/
-/*}*/
-/*div.what-eat{*/
-/*top: 0px;*/
-/*}*/
-/*div.what-cook{*/
-/*top: 50%;*/
-/*}*/
-/*-----------------------------------------------------*/
 html, body {
   height: 100% !important; }
 
@@ -9879,6 +9839,32 @@ html, body {
   width: 150px;
   height: 150px;
   vertical-align: middle; }
+
+.neyesemh1 h1 {
+  color: #ffffff;
+  font-size: 60pt;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -40%;
+  width: 80%;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center; }
+
+.nepisirsemh1 h1 {
+  color: #ffffff;
+  font-size: 60pt;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -40%;
+  width: 80%;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center; }
 
 .center_logo img {
   width: 40%;
@@ -9950,7 +9936,7 @@ h1 {
     max-height: 568px;
     max-width: 320px; }
   h1 {
-    font-size: 30px !important; }
+    font-size: 35px !important; }
   .logo1 * {
     margin-top: -60px;
     margin-left: -60px;
@@ -9958,10 +9944,10 @@ h1 {
     height: 120px; }
   .neyesem h1 {
     top: 18%;
-    left: 24%; }
+    left: 20%; }
   .nepisirsem h1 {
     top: 70%;
-    left: 16%; } }
+    left: 11%; } }
 
 /* ----------- iPhone 6 ----------- */
 /* Portrait */
@@ -9970,13 +9956,13 @@ h1 {
     max-height: 667px;
     max-width: 375px; }
   h1 {
-    font-size: 40px !important; }
+    font-size: 37px !important; }
   .neyesem h1 {
     top: 20%;
     left: 22%; }
   .nepisirsem h1 {
     top: 70%;
-    left: 17%; } }
+    left: 15%; } }
 
 /* ----------- iPhone 6+ ----------- */
 /* Portrait */
@@ -9985,13 +9971,18 @@ h1 {
     max-height: 736px;
     max-width: 414px; }
   h1 {
-    font-size: 40px !important; }
+    font-size: 25px !important; }
+  .logo1 * {
+    margin-top: -65px;
+    margin-left: -65px;
+    width: 130px;
+    height: 130px; }
   .neyesem h1 {
     top: 20%;
-    left: 25%; }
+    left: 28%; }
   .nepisirsem h1 {
     top: 70%;
-    left: 20%; } }
+    left: 22%; } }
 
 /* ----------- Galaxy S5 ----------- */
 /* Portrait */
@@ -10003,10 +9994,10 @@ h1 {
     font-size: 35px !important; }
   .neyesem h1 {
     top: 20%;
-    left: 25%; }
+    left: 22%; }
   .nepisirsem h1 {
     top: 70%;
-    left: 20%; } }
+    left: 15%; } }
 
 /* ----------- HTC SV ONE ----------- */
 /* Portrait */
@@ -10050,23 +10041,63 @@ h1 {
 
 /* ----------- Nexus 7 ----------- */
 /* Portrait */
-@media only screen and (min-device-width: 600px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
-    max-height: 900px;
+    max-height: 960px;
     max-width: 600px; }
+  .logo1 * {
+    margin-top: -95px;
+    margin-left: -95px;
+    width: 190px;
+    height: 190px; }
+  h1 {
+    font-size: 40pt !important; }
+  .neyesem h1 {
+    top: 20%;
+    left: 35%; }
+  .nepisirsem h1 {
+    top: 70%;
+    left: 33%; } }
+
+/* ----------- Nexus 6p ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .container {
+    max-height: 732px;
+    max-width: 412px; }
   .logo1 * {
     margin-top: -75px;
     margin-left: -75px;
     width: 150px;
     height: 150px; }
   h1 {
-    font-size: 35pt !important; }
+    font-size: 25pt !important; }
   .neyesem h1 {
     top: 20%;
     left: 28%; }
   .nepisirsem h1 {
     top: 70%;
     left: 22%; } }
+
+/* ----------- Nexus 10 ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+  .container {
+    max-height: 1280px;
+    max-width: 800px; }
+  .logo1 * {
+    margin-top: -110px;
+    margin-left: -110px;
+    width: 220px;
+    height: 220px; }
+  h1 {
+    font-size: 40pt !important; }
+  .neyesem h1 {
+    top: 20%;
+    left: 32%; }
+  .nepisirsem h1 {
+    top: 70%;
+    left: 26%; } }
 
 .food-card {
   font-family: Gotham, sans-serif;
