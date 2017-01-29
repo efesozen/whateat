@@ -1,15 +1,15 @@
-<ion-view title="">
-  <ion-nav-bar class="bar-orange" align-title="center" >
-    <ion-nav-back-button>
-    </ion-nav-back-button>
+<ion-view>
+  <ion-nav-bar class="bar-orange" align-title="center">
+    <ion-nav-back-button class="button-light"></ion-nav-back-button>
     <ion-nav-title style="color: #ffffff;">
       {{vm.title}}
     </ion-nav-title>
   </ion-nav-bar>
+
   <ion-content on-swipe-right="$ionicGoBack()">
     <ul class="list">
       <li class="item"
-          ng-repeat="venue in vm.venues | orderBy : venue.venue.name"
+          ng-repeat="venue in vm.venues | orderBy : 'venue.location.distance'"
           ng-click="vm.getVenue(venue.venue.id)"
           ng-if="venue.venue.ratingColor">
         <h2>{{venue.venue.name}}</h2>

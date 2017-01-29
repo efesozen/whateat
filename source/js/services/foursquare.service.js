@@ -28,7 +28,7 @@
           ll:location,
           llAcc: 3000.0,
           query: searchText,
-          radius:4000
+          radius:2500
 
         }
       })

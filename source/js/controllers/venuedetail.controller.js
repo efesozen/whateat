@@ -22,10 +22,8 @@
         vm.venue = data.response.venue;
 
         if (vm.venue.photos.groups[0]) {
-
           vm.venue.thumbnail = vm.venue.photos.groups[0].items[0].prefix + '40x40' + vm.venue.photos.groups[0].items[0].suffix;
           vm.venue.photo = vm.venue.photos.groups[0].items[1].prefix + '300x300' + vm.venue.photos.groups[0].items[1].suffix;
-
         }
 
         $ionicLoading.hide();

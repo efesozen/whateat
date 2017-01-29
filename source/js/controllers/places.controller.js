@@ -35,7 +35,8 @@
                 FoursquareService.searchVenue(searchText, location, function (data) {
                     var response = data.response;
                     angular.forEach(response.groups[0].items, function (v) {
-                        if (v.venue.hours && v.venue.hours.isOpen) {
+                        //if (v.venue.hours && v.venue.hours.isOpen) { //if you want listing all venues do comment this line
+                            if (v.venue.hours) { //uncomment for all venues
                             if (v.venue.rating) {
                                 v.venue.rating = v.venue.rating.toFixed(1);
                                 v.venue.location.distance = parseFloat((v.venue.location.distance / 1000).toFixed(1));
