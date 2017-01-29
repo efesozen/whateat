@@ -34,7 +34,7 @@
                 $ionicLoading.show();
                 FoursquareService.searchVenue(searchText, location, function (data) {
                     var response = data.response;
-                    angular.forEach(response.groups[0].items, function (v, k) {
+                    angular.forEach(response.groups[0].items, function (v) {
                         if (v.venue.hours && v.venue.hours.isOpen) {
                             if (v.venue.rating) {
                                 v.venue.rating = v.venue.rating.toFixed(1);
