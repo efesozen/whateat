@@ -23,20 +23,18 @@
 }
 
 .food-button-group{
-  margin-left: auto;
-  margin-right: auto;
-  width: 220px !important;
   margin-top: 8%;
+  text-align: center;
 }
 
 .food-button{
-  font-family: Gotham;
-  width: 220px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  font-weight: bold;
-  font-size:20px !important;
-  margin-bottom:10px;
+  font-family: Helvetica,sans serif;
+  width: 140px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  font-weight: 700;
+  font-size: 14px!important;
+  margin-bottom: 10px;
 }
 
 .button-orange{
@@ -56,8 +54,12 @@
 
 .frame {
   position: relative;
+  padding: 10px 15px;
+  img{
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
 }
-
 .shadow{
   background-color: black;
 }

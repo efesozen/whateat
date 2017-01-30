@@ -10116,18 +10116,16 @@ h1 {
   left: 25px; }
 
 .food-button-group {
-  margin-left: auto;
-  margin-right: auto;
-  width: 220px !important;
-  margin-top: 8%; }
+  margin-top: 8%;
+  text-align: center; }
 
 .food-button {
-  font-family: Gotham;
-  width: 220px !important;
+  font-family: Helvetica,sans serif;
+  width: 140px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  font-weight: bold;
-  font-size: 20px !important;
+  font-weight: 700;
+  font-size: 14px !important;
   margin-bottom: 10px; }
 
 .button-orange {
@@ -10143,7 +10141,11 @@ h1 {
   border: 1px solid #ccc; }
 
 .frame {
-  position: relative; }
+  position: relative;
+  padding: 10px 15px; }
+  .frame img {
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .shadow {
   background-color: black; }

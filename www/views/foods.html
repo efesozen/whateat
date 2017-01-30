@@ -10,16 +10,16 @@
 
   <ion-content padding="false" class="food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
     <div class="frame">
-      <img src="img/foto.png" class="food-img">
-      <span class="food-name">{{vm.food.name}}</span>
+      <img ng-src="{{vm.card.path}}" class="food-img">
+      <span class="food-name">{{vm.card.name}}</span>
     </div>
 
 
     <div class="food-button-group">
-      <button class="button button-orange food-button" ng-click="vm.selectFood(vm.food.id)">
+      <!--<button class="button button-orange food-button" ng-click="vm.selectFood(vm.card.id)">
         SENİ SEÇTİM
-      </button>
-      <button class="button button-green food-button" ng-click="vm.change()">
+      </button>-->
+      <button class="button button-green food-button" ng-click="vm.changeCards()">
         BAŞKA NE VAR?
       </button>
     </div>
