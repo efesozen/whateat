@@ -9875,10 +9875,6 @@ html, body {
   left: 30%;
   position: absolute; }
 
-@font-face {
-  font-family: "TypoGraphica";
-  src: url("../fonts/TypoGraphica.ttf") format("opentype"); }
-
 h1 {
   color: white;
   position: absolute;
@@ -10216,3 +10212,7 @@ a.item {
   padding-right: 8px;
   border-radius: 20px;
   margin-top: 10px !important; }
+
+.item .badge {
+  top: 16px;
+  right: 16px !important; }
