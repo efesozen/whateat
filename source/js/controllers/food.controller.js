@@ -28,7 +28,7 @@
     }
 
     function selectCard(card){
-      //$state.go('places',{ searchText:card});
+      $state.go('foodDetail',{ name:card});
 
     }
 
@@ -62,12 +62,12 @@
       $ionicLoading.show({
         template: 'Loading...'
       }).then(function(){
-        console.log("The loading indicator is now displayed");
+       // console.log("The loading indicator is now displayed");
       });
       FoodService.getFoods(0,function (d) {
         vm.card = d;
         $ionicLoading.hide().then(function(){
-          console.log("The loading indicator is now hidden");
+         // console.log("The loading indicator is now hidden");
         });
       });
     }
@@ -77,13 +77,13 @@
       $ionicLoading.show({
         template: 'Loading...'
       }).then(function(){
-        console.log("The loading indicator is now displayed");
+       // console.log("The loading indicator is now displayed");
       });
       FoodService.getFoods(1,function (d) {
         cards = d;
         changeCards();
         $ionicLoading.hide().then(function(){
-          console.log("The loading indicator is now hidden");
+        //  console.log("The loading indicator is now hidden");
         });
       });
     }

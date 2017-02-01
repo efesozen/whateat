@@ -64,12 +64,12 @@
       $ionicLoading.show({
         template: 'Loading...'
       }).then(function(){
-        console.log("The loading indicator is now displayed");
+        //console.log("The loading indicator is now displayed");
       });
       CardsService.getCards(0,function (d) {
         vm.card = d;
         $ionicLoading.hide().then(function(){
-          console.log("The loading indicator is now hidden");
+          //console.log("The loading indicator is now hidden");
         });
       });
     }
@@ -79,13 +79,13 @@
       $ionicLoading.show({
         template: 'Loading...'
       }).then(function(){
-        console.log("The loading indicator is now displayed");
+        //console.log("The loading indicator is now displayed");
       });
       CardsService.getCards(1,function (d) {
        cards = d;
        changeCards();
         $ionicLoading.hide().then(function(){
-          console.log("The loading indicator is now hidden");
+         // console.log("The loading indicator is now hidden");
         });
       });
     }

@@ -32,7 +32,7 @@
 
         if(vm.venue.location.city)
           vm.showState = vm.venue.location.city + " / " + vm.venue.location.state;
-        console.log(data.response.venue);
+        //console.log(data.response.venue);
       });
 
       FoursquareService.getMenu(id,function(data) {

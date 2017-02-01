@@ -40,7 +40,7 @@
         controller:'FoodCtrl as vm'
       })
       .state('foodDetail', {
-        url: '/foodDetail:id',
+        url: '/foodDetail:name',
         templateUrl: 'views/foodDetail.html',
         controller:'FoodDetailCtrl as vm'
       })
