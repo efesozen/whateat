@@ -1,7 +1,7 @@
 {
   "name": "neyesem",
   "version": "1.1.1",
-  "description": "WhatEat: An Ionic project",
+  "description": "WhatEat",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-clean": "^0.3.2",
