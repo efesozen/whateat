@@ -1,7 +1,6 @@
 <ion-view title="">
   <ion-nav-bar class="bar-orange" align-title="center" >
-    <ion-nav-back-button>
-    </ion-nav-back-button>
+    <ion-nav-back-button class="button-light"></ion-nav-back-button>
     <ion-nav-title>
       <img src="img/tepe_logo_nepisirsem.png" class="main-logo">
     </ion-nav-title>
@@ -10,16 +9,16 @@
 
   <ion-content padding="false" class="food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
     <div class="frame">
-      <img src="img/foto.png" class="food-img">
-      <span class="food-name">{{vm.food.name}}</span>
+      <img ng-src="{{vm.card.path}}" class="food-img">
+      <span class="food-name">{{vm.card.name}}</span>
     </div>
 
 
     <div class="food-button-group">
-      <button class="button button-orange food-button" ng-click="vm.selectFood(vm.food.id)">
+      <!--<button class="button button-orange food-button" ng-click="vm.selectFood(vm.card.id)">
         SENİ SEÇTİM
-      </button>
-      <button class="button button-green food-button" ng-click="vm.change()">
+      </button>-->
+      <button class="button button-green food-button" ng-click="vm.changeCards()">
         BAŞKA NE VAR?
       </button>
     </div>

@@ -9851,13 +9851,28 @@ html, body {
   width: 80%;
   height: 50px;
   vertical-align: middle;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
 
 .nepisirsemh1 h1 {
   color: #ffffff;
   font-size: 60pt;
   position: absolute;
   top: 80%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -40%;
+  width: 80%;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold; }
+
+.nepisirsemh1 h3 {
+  color: #ffffff;
+  font-size: 20pt;
+  position: absolute;
+  top: 88%;
   left: 50%;
   margin-top: -50px;
   margin-left: -40%;
@@ -9874,10 +9889,6 @@ html, body {
   z-index: 1;
   left: 30%;
   position: absolute; }
-
-@font-face {
-  font-family: "TypoGraphica";
-  src: url("../fonts/TypoGraphica.ttf") format("opentype"); }
 
 h1 {
   color: white;
@@ -10120,18 +10131,16 @@ h1 {
   left: 25px; }
 
 .food-button-group {
-  margin-left: auto;
-  margin-right: auto;
-  width: 220px !important;
-  margin-top: 8%; }
+  margin-top: 8%;
+  text-align: center; }
 
 .food-button {
-  font-family: Gotham;
-  width: 220px !important;
+  font-family: Helvetica,sans serif;
+  width: 140px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  font-weight: bold;
-  font-size: 20px !important;
+  font-weight: 700;
+  font-size: 14px !important;
   margin-bottom: 10px; }
 
 .button-orange {
@@ -10147,7 +10156,11 @@ h1 {
   border: 1px solid #ccc; }
 
 .frame {
-  position: relative; }
+  position: relative;
+  padding: 10px 15px; }
+  .frame img {
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .shadow {
   background-color: black; }
@@ -10194,7 +10207,7 @@ h2 {
   color: white;
   font-size: 16px;
   text-align: center;
-  min-width: 57px; }
+  min-width: 56px; }
 
 .item h2 {
   width: 80%; }
@@ -10216,3 +10229,7 @@ a.item {
   padding-right: 8px;
   border-radius: 20px;
   margin-top: 10px !important; }
+
+.item .badge {
+  top: 16px;
+  right: 16px !important; }

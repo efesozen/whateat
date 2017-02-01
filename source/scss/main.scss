@@ -51,6 +51,7 @@ html, body {
   height: 50px;
   vertical-align: middle;
   text-align: center;
+  font-weight: bold;
 }
 
 .nepisirsemh1 h1 {
@@ -58,6 +59,21 @@ html, body {
   font-size:60pt;
   position: absolute;
   top: 80%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -40%;
+  width: 80%;
+  height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nepisirsemh1 h3 {
+  color:#ffffff;
+  font-size:20pt;
+  position: absolute;
+  top: 88%;
   left: 50%;
   margin-top: -50px;
   margin-left: -40%;
@@ -77,10 +93,6 @@ html, body {
   position: absolute;
 }
 
-@font-face {
-  font-family: "TypoGraphica";
-  src: url("../fonts/TypoGraphica.ttf") format("opentype");
-}
 
 h1{
   color:white;

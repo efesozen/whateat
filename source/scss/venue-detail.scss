@@ -33,7 +33,7 @@ h2{
   color: white;
   font-size:16px;
   text-align: center;
-  min-width: 57px;
+  min-width: 56px;
 }
 
 
@@ -65,3 +65,7 @@ a.item{
   margin-top:10px !important;
 }
 
+.item .badge{
+  top:16px;
+  right: 16px !important;
+}

@@ -1,19 +1,24 @@
 <ion-view title="Home">
     <ion-content has-bouncing="false" scroll="false">
-        <div class="kutu neyesem" ng-click="vm.whatEat()">
-            <img src="img/whateat_back.png"/>
-        </div>
-        <div class="kutu nepisirsem">
-            <img src="img/whatcook_back.png"/>
-        </div>
+        <a ng-click="vm.whatEat()">
+            <div class="kutu neyesem">
+                <img src="img/whateat_back.png"/>
+            </div>
+            <div class="neyesemh1">
+                <h1>NE YESEM?</h1>
+            </div>
+        </a>
+        <a>
+            <div class="kutu nepisirsem">
+                <img src="img/whatcook_back.png"/>
+            </div>
+            <div class="nepisirsemh1">
+                <h1>NE PİŞİRSEM?</h1>
+                <h3>Çok Yakında!</h3>
+            </div>
+        </a>
         <div class="logo1">
             <img src="img/center_logo.png"/>
-        </div>
-        <div class="neyesemh1">
-            <h1>NE YESEM?</h1>
-        </div>
-        <div class="nepisirsemh1">
-            <h1>NE PİŞİRSEM?</h1>
         </div>
     </ion-content>
 </ion-view>
