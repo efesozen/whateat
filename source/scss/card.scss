@@ -1,6 +1,6 @@
 
 .food-card{
-  font-family: Gotham, sans-serif;
+  font-family: Helvetica;
  /* background: url(../img/bg.png);*/
   left: -3px;
   background: #F5F5F5;
@@ -9,8 +9,6 @@
 .food-img{
   width: 100%;
   height: auto;
-  opacity: 0.8;
-  filter: alpha(opacity=50);
 }
 
 .food-name{
@@ -28,7 +26,7 @@
 }
 
 .food-button{
-  font-family: Helvetica,sans serif;
+  font-family: Helvetica;
   width: 140px!important;
   margin-left: auto!important;
   margin-right: auto!important;

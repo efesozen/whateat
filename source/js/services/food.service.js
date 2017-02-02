@@ -37,7 +37,7 @@
         },
         {
             name: 'Domates Çorbası',
-            path: 'img/foods/hamburger.jpg',
+            path: 'img/foods/domatescorba.jpg',
             materials: [
                 '4-5 adet olgun domates',
                 '2 çorba kaşığı tereyağı',
