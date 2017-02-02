@@ -10098,7 +10098,7 @@ h1 {
     left: 26%; } }
 
 .food-card {
-  font-family: Gotham, sans-serif;
+  font-family: Helvetica;
   /* background: url(../img/bg.png);*/
   left: -3px;
   background: #F5F5F5; }
@@ -10120,7 +10120,7 @@ h1 {
   text-align: center; }
 
 .food-button {
-  font-family: Helvetica,sans serif;
+  font-family: Helvetica;
   width: 140px !important;
   margin-left: auto !important;
   margin-right: auto !important;
@@ -10165,10 +10165,10 @@ h1 {
     text-align: center; }
 
 .venueDetail {
-  font-family: Gotham; }
+  font-family: Helvetica; }
 
 h2, span, p {
-  font-family: Gotham !important; }
+  font-family: Helvetica !important; }
 
 .venue-name {
   font-size: 22px !important; }
