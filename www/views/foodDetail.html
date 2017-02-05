@@ -1,40 +1,40 @@
 <ion-view title="">
 
-  <ion-nav-bar class="bar-orange" align-title="center" >
-    <ion-nav-back-button class="button-light"></ion-nav-back-button>
-    <ion-nav-title>
-      <img src="img/nepisirsem_topbarlogo.png" class="main-logo">
-    </ion-nav-title>
-  </ion-nav-bar>
+    <ion-nav-bar class="bar-orange" align-title="center">
+        <ion-nav-back-button class="button-light"></ion-nav-back-button>
+        <ion-nav-title>
+            <img src="img/nepisirsem_topbarlogo.png" class="main-logo">
+        </ion-nav-title>
+    </ion-nav-bar>
 
 
-  <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
-    <div class="list card">
-      <div class="item item-image">
-        <img ng-src="{{vm.food.path}}" class="venueImg">
-      </div>
+    <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+        <div class="list card">
+            <div class="item item-image">
+                <img ng-src="{{vm.food.path}}" class="venueImg">
+            </div>
 
-      <a class="item item-icon-right" href="javascript:;" >
-        <h2 class="venue-name">{{vm.food.name}}</h2>
-        <a href="javascript:;" ng-click="vm.shareSocial()" class="share-food"><i class="ion-android-share-alt"></i></a>
-      </a>
-    </div>
-    <div class="list card">
-      <div class="item item-body">
-        <h5 class="material-title">Malzemeler</h5>
-        <ul class="material-detail">
-          <li ng-repeat="item in vm.food.materials">{{item}}</li>
-        </ul>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-body">
-        <h5 class="desc-title">Hazırlanışı</h5>
-        <p class="desc-detail">
-          {{vm.food.description}}
-        </p>
+            <a class="item item-icon-right" href="javascript:;">
+                <h2 class="venue-name">{{vm.food.name}}</h2>
+                <!-- <a href="javascript:;" ng-click="vm.shareSocial()" class="share-food"><i class="ion-android-share-alt"></i></a>-->
+            </a>
+        </div>
+        <div class="list card">
+            <div class="item item-body">
+                <h5 class="material-title">Malzemeler</h5>
+                <ul class="material-detail">
+                    <li ng-repeat="item in vm.food.materials">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-body">
+                <h5 class="desc-title">Hazırlanışı</h5>
+                <p class="desc-detail">
+                    {{vm.food.description}}
+                </p>
 
-      </div>
+            </div>
 
-    </div>
+        </div>
 </ion-view>

@@ -75,10 +75,11 @@
 
 .badge{
   padding-top:9px;
-  min-width: 35px;
+  min-width: 34px;
   .item &{
     height: 34px;
     border-radius: 90px;
+    border-color: #fff;
     text-align: center;
   }
 }

@@ -9867,7 +9867,8 @@ html, body {
   height: 50px;
   vertical-align: middle;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 0px !important; }
 
 .nepisirsemh1 h1 {
   color: #ffffff;
@@ -9881,7 +9882,8 @@ html, body {
   height: 50px;
   vertical-align: middle;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 0px !important; }
 
 .center_logo img {
   width: 40%;
@@ -10169,10 +10171,11 @@ h1 {
 
 .badge {
   padding-top: 9px;
-  min-width: 35px; }
+  min-width: 34px; }
   .item .badge {
     height: 34px;
     border-radius: 90px;
+    border-color: #fff;
     text-align: center; }
 
 .venueDetail {

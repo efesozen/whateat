@@ -33,6 +33,8 @@
         if(vm.venue.location.city)
           vm.showState = vm.venue.location.city + " / " + vm.venue.location.state;
         //console.log(data.response.venue);
+
+          vm.venue.rating = vm.venue.rating.toFixed(1);
       });
 
       FoursquareService.getMenu(id,function(data) {
