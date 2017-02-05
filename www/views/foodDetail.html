@@ -14,9 +14,9 @@
         <img ng-src="{{vm.food.path}}" class="venueImg">
       </div>
 
-      <a class="item item-icon-right" href="#">
+      <a class="item item-icon-right" href="javascript:;" >
         <h2 class="venue-name">{{vm.food.name}}</h2>
-        <a href="javascript:;" class="share-food" ng-click="vm.share()"><i class="ion-android-share-alt"></i></a>
+        <a href="javascript:;" ng-click="vm.shareSocial()" class="share-food"><i class="ion-android-share-alt"></i></a>
       </a>
     </div>
     <div class="list card">
