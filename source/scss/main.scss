@@ -1,34 +1,62 @@
-.bar-orange{
-  background:#ff7e00;
+.bar-orange {
+  background: #ff7e00;
 }
 
-.main-logo{
-  width:135px;
+.main-logo {
+  width: 135px;
 }
-
 
 html, body {
-  height:100% !important;
+  height: 100% !important;
+  background: #f4f5f7 !important;
 }
-.kutu { height:50%; }
-.neyesem { background:#000 }
-.nepisirsem {  background:#000; }
 
-.neyesem img{
+.pane{
+  background-color: #f4f5f7!important;
+}
+
+.item{
+  border-style: hidden !important;
+  h2{
+    font-weight: 600;
+  }
+}
+
+.card{
+  margin: 10px !important;
+}
+
+.card a{
+    font-size: 16px !important;
+}
+
+.kutu {
+  height: 50%;
+}
+
+.neyesem {
+  background: #000
+}
+
+.nepisirsem {
+  background: #000;
+}
+
+.neyesem img {
   width: 100%;
   height: 100%;
   opacity: 0.6;
   filter: alpha(opacity=50);
 }
 
-.nepisirsem img{
+.nepisirsem img {
   width: 100%;
   height: 100%;
   opacity: 0.6;
   filter: alpha(opacity=50);
 }
 
-.logo1 *{
+.logo1 * {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -40,8 +68,8 @@ html, body {
 }
 
 .neyesemh1 h1 {
-  color:#ffffff;
-  font-size:60pt;
+  color: #ffffff;
+  font-size: 60pt;
   position: absolute;
   top: 30%;
   left: 50%;
@@ -55,8 +83,8 @@ html, body {
 }
 
 .nepisirsemh1 h1 {
-  color:#ffffff;
-  font-size:60pt;
+  color: #ffffff;
+  font-size: 60pt;
   position: absolute;
   top: 80%;
   left: 50%;
@@ -69,7 +97,7 @@ html, body {
   font-weight: bold;
 }
 
-.center_logo img{
+.center_logo img {
   width: 40%;
   height: 22%;
   margin: 0 auto;
@@ -79,335 +107,291 @@ html, body {
   position: absolute;
 }
 
-
-h1{
-  color:white;
+h1 {
+  color: white;
   position: absolute;
   letter-spacing: 2px;
 }
 
 .whateat img {
-  height: 50% ;
-  width: 100% ;
+  height: 50%;
+  width: 100%;
   display: table;
   opacity: 0.6;
   filter: alpha(opacity=50);
 }
 
 .whatcook img {
-  height: 50% ;
-  width: 100% ;
+  height: 50%;
+  width: 100%;
   display: table;
   border: 0;
   opacity: 0.6;
   filter: alpha(opacity=50);
 }
 
-.whateat{
+.whateat {
   background: black;
 }
 
-.whatcook{
+.whatcook {
   background: black;
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 480px)
-and (max-device-height: 480px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (max-device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .container {
     max-height: 480px;
     max-width: 320px;
   }
   .whateat img {
-    content:url(../img/whateat_back_iphone4.png) !important;
+    content: url(../img/whateat_back_iphone4.png) !important;
   }
   .whatcook img {
-    content:url(../img/whatcook_back_iphone4.png) !important;
+    content: url(../img/whatcook_back_iphone4.png) !important;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -75px;
     margin-left: -75px;
     width: 150px;
     height: 150px;
   }
-  h1{
+  h1 {
     font-size: 45px !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:22%;
+  .neyesem h1 {
+    top: 20%;
+    left: 22%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:17%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 17%;
   }
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 320px)
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .container {
     max-height: 568px;
     max-width: 320px;
   }
-  h1{
+  h1 {
     font-size: 35px !important;
   }
 
-  .logo1 *{
+  .logo1 * {
     margin-top: -60px;
     margin-left: -60px;
     width: 120px;
     height: 120px;
   }
-  .neyesem h1{
-    top:18%;
-    left:20%;
+  .neyesem h1 {
+    top: 18%;
+    left: 20%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:11%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 11%;
   }
 }
 
 /* ----------- iPhone 6 ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 375px)
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .container {
     max-height: 667px;
     max-width: 375px;
   }
-  h1{
+  h1 {
     font-size: 37px !important;
   }
 
-  .neyesem h1{
-    top:20%;
-    left:22%;
+  .neyesem h1 {
+    top: 20%;
+    left: 22%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:15%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 15%;
   }
 }
 
 /* ----------- iPhone 6+ ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 414px)
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
   .container {
     max-height: 736px;
     max-width: 414px;
   }
-  h1{
+  h1 {
     font-size: 25px !important;
   }
 
-  .logo1 *{
+  .logo1 * {
     margin-top: -65px;
     margin-left: -65px;
     width: 130px;
     height: 130px;
   }
-  .neyesem h1{
-    top:20%;
-    left:28%;
+  .neyesem h1 {
+    top: 20%;
+    left: 28%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:22%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 22%;
   }
 }
 
 /* ----------- Galaxy S5 ----------- */
 /* Portrait */
-@media screen
-and (device-width: 360px)
-and (device-height: 640px)
-and (-webkit-device-pixel-ratio: 3)
-and (orientation: portrait) {
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .container {
     max-width: 360px;
     max-height: 640px;
   }
-  h1{
+  h1 {
     font-size: 35px !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:22%;
+  .neyesem h1 {
+    top: 20%;
+    left: 22%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:15%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 15%;
   }
 }
 
 /* ----------- HTC SV ONE ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 480px)
-and (max-device-width: 800px)
-and (-webkit-min-device-pixel-ratio: 1)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 480px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
     max-height: 800px;
     max-width: 480px;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -75px;
     margin-left: -75px;
     width: 150px;
     height: 150px;
   }
-  h1{
+  h1 {
     font-size: 40px !important;
   }
-  .neyesem h1{
-    top:24%;
-    left:31%;
+  .neyesem h1 {
+    top: 24%;
+    left: 31%;
   }
-  .nepisirsem h1{
-    top:75%;
-    left:25%;
+  .nepisirsem h1 {
+    top: 75%;
+    left: 25%;
   }
 }
 
 /* ----------- HTC Sensation ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 540px)
-and (max-device-width: 960px)
-and (-webkit-min-device-pixel-ratio: 1)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 540px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
     max-height: 960px;
     max-width: 540px;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -75px;
     margin-left: -75px;
     width: 150px;
     height: 150px;
   }
-  h1{
+  h1 {
     font-size: 35pt !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:20%;
+  .neyesem h1 {
+    top: 20%;
+    left: 20%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:15%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 15%;
   }
 }
 
-
 /* ----------- Nexus 7 ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 600px)
-and (max-device-width: 960px)
-and (-webkit-min-device-pixel-ratio: 1)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 600px) and (max-device-width: 960px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
     max-height: 960px;
     max-width: 600px;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -95px;
     margin-left: -95px;
     width: 190px;
     height: 190px;
   }
-  h1{
+  h1 {
     font-size: 40pt !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:35%;
+  .neyesem h1 {
+    top: 20%;
+    left: 35%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:33%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 33%;
   }
 }
 
-
 /* ----------- Nexus 6p ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 412px)
-and (max-device-width: 732px)
-and (-webkit-min-device-pixel-ratio: 1)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 732px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
     max-height: 732px;
     max-width: 412px;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -75px;
     margin-left: -75px;
     width: 150px;
     height: 150px;
   }
-  h1{
+  h1 {
     font-size: 25pt !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:28%;
+  .neyesem h1 {
+    top: 20%;
+    left: 28%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:22%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 22%;
   }
 }
 
 /* ----------- Nexus 10 ----------- */
 /* Portrait */
-@media only screen
-and (min-device-width: 800px)
-and (max-device-width: 1280px)
-and (-webkit-min-device-pixel-ratio: 1)
-and (orientation: portrait) {
+@media only screen and (min-device-width: 800px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .container {
     max-height: 1280px;
     max-width: 800px;
   }
-  .logo1 *{
+  .logo1 * {
     margin-top: -110px;
     margin-left: -110px;
     width: 220px;
     height: 220px;
   }
-  h1{
+  h1 {
     font-size: 40pt !important;
   }
-  .neyesem h1{
-    top:20%;
-    left:32%;
+  .neyesem h1 {
+    top: 20%;
+    left: 32%;
   }
-  .nepisirsem h1{
-    top:70%;
-    left:26%;
+  .nepisirsem h1 {
+    top: 70%;
+    left: 26%;
   }
 }
 

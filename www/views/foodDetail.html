@@ -1,28 +1,25 @@
 <ion-view title="">
-  <ion-nav-bar class="bar-orange" align-title="center" >
-    <ion-nav-back-button class="button-light"></ion-nav-back-button>
-    <ion-nav-title>
-      <img src="img/nepisirsem_topbarlogo.png" class="main-logo">
-    </ion-nav-title>
-  </ion-nav-bar>
-
-
-  <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
-    <img ng-src="{{vm.food.path}}" class="venueImg">
-    <div class="list card">
-      <div class="item item-body">
-        <h2>{{vm.food.name}}</h2>
-        <h5>Malzemeler</h5>
-        <ul>
-          <li ng-repeat="item in vm.food.materials">{{item}}</li>
-        </ul>
-        <h5>Hazırlanışı</h5>
-        <p>
-          {{vm.food.description}}
-        </p>
-
-      </div>
-
-    </div>
-  </ion-content>
+    <ion-nav-bar class="bar-orange" align-title="center">
+        <ion-nav-back-button class="button-light"></ion-nav-back-button>
+        <ion-nav-title>
+            <img src="img/nepisirsem_topbarlogo.png" class="main-logo">
+        </ion-nav-title>
+        <ion-nav-button class="button-light">geri</ion-nav-button>
+    </ion-nav-bar>
+    <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
+        <img ng-src="{{vm.food.path}}" class="venueImg">
+        <div class="list card">
+            <div class="item item-body">
+                <h2>{{vm.food.name}}</h2>
+                <h5>Malzemeler</h5>
+                <ul>
+                    <li ng-repeat="item in vm.food.materials">{{item}}</li>
+                </ul>
+                <h5>Hazırlanışı</h5>
+                <p>
+                    {{vm.food.description}}
+                </p>
+            </div>
+        </div>
+    </ion-content>
 </ion-view>

@@ -9807,7 +9807,22 @@ a.button {
   width: 135px; }
 
 html, body {
-  height: 100% !important; }
+  height: 100% !important;
+  background: #f4f5f7 !important; }
+
+.pane {
+  background-color: #f4f5f7 !important; }
+
+.item {
+  border-style: hidden !important; }
+  .item h2 {
+    font-weight: 600; }
+
+.card {
+  margin: 10px !important; }
+
+.card a {
+  font-size: 16px !important; }
 
 .kutu {
   height: 50%; }
@@ -10099,9 +10114,7 @@ h1 {
 
 .food-card {
   font-family: Helvetica;
-  /* background: url(../img/bg.png);*/
-  left: -3px;
-  background: #F5F5F5; }
+  /* background: url(../img/bg.png);*/ }
 
 .food-img {
   width: 100%;
@@ -10131,21 +10144,19 @@ h1 {
 .button-orange {
   background: #fff !important;
   color: #ff7e00;
-  border-radius: 10px;
   border: 1px solid #ccc; }
 
 .button-green {
   background: #fff !important;
   color: #888 !important;
-  border-radius: 10px;
   border: 1px solid #ccc; }
 
 .frame {
   position: relative;
-  padding: 10px 15px; }
+  padding: 10px 10px; }
   .frame img {
-    border-radius: 10px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.23); }
 
 .shadow {
   background-color: black; }
@@ -10171,7 +10182,7 @@ h2, span, p {
   font-family: Helvetica !important; }
 
 .venue-name {
-  font-size: 22px !important; }
+  font-size: 16px !important; }
 
 h2 {
   color: #ff7e00 !important; }
