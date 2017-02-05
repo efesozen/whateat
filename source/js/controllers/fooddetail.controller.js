@@ -8,9 +8,9 @@
     .module('app.controllers')
     .controller('FoodDetailCtrl',FoodDetailCtrl);
 
-  FoodDetailCtrl.$inject = ['$stateParams','FoodService','$ionicLoading'];
+  FoodDetailCtrl.$inject = ['$stateParams','FoodService','$ionicLoading','$cordovaSocialSharing'];
 
-  function FoodDetailCtrl($stateParams,FoodService,$ionicLoading) {
+  function FoodDetailCtrl($stateParams,FoodService,$ionicLoading,$cordovaSocialSharing) {
 
     var vm = this;
     if($stateParams) {
@@ -27,6 +27,19 @@
           });
         });
       });
+    }
+
+    vm.shareSocial = function(){
+      var message = "Ne pişireceğime Ne Yesem App ile karar verdim. " + vm.food.name + ' tarifi için:';
+      var subject = vm.food.name + " Ne Yesem App";
+      var link = "https://tinyurl.com/zvjgvdn";
+      $cordovaSocialSharing
+          .share(message, subject, null, link) // Share via native share sheet
+          .then(function(result) {
+            // Success!
+          }, function(err) {
+            // An error occured. Show a message to the user
+          });
     }
   }
 

@@ -10190,8 +10190,7 @@ h2 {
 .venueImg {
   width: 100%;
   height: 300px;
-  display: block;
-  padding: 10px; }
+  display: block; }
 
 .rating {
   padding: 15px;
