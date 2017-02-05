@@ -8,21 +8,41 @@
 
 
   <ion-content padding="false" class="venueDetail food-card" has-bouncing="false" on-swipe-right="$ionicGoBack()">
-    <img ng-src="{{vm.food.path}}" class="venueImg">
+    <div class="list card">
+      <div class="item item-image">
+        <img ng-src="{{vm.food.path}}" class="venueImg">
+      </div>
+
+      <a class="item item-icon-right" href="#">
+        <h2 class="venue-name">{{vm.food.name}}</h2>
+        <a href="javascript:;" class="share-food"><i class="ion-android-share-alt"></i></a>
+      </a>
+    </div>
     <div class="list card">
       <div class="item item-body">
-        <h2>{{vm.food.name}}</h2>
-        <h5>Malzemeler</h5>
-        <ul>
+        <h5 class="material-title">Malzemeler</h5>
+        <ul class="material-detail">
           <li ng-repeat="item in vm.food.materials">{{item}}</li>
         </ul>
-        <h5>Hazırlanışı</h5>
-        <p>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-body">
+        <h5 class="desc-title">Hazırlanışı</h5>
+        <p class="desc-detail">
           {{vm.food.description}}
         </p>
 
       </div>
 
     </div>
+
+
+
+   <!-- <img ng-src="{{vm.food.path}}" class="venueImg">
+    <div class="what-cook-title">
+      <h2>{{vm.food.name}}</h2>
+    </div>-->
+
   </ion-content>
 </ion-view>
